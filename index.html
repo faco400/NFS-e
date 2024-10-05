@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Nota Fiscal de Serviço Eletrônica (NFS-E)</h1>
+  <form>
+    <ul>
+      <li><label for ="valorVenda"> Valor da venda (R$): </label> 
+        <input id="valorVenda" type="number"></input>
+      </li>
+      <li>
+        <label for ="produtos"> Adicione um produto a lista: </label> 
+          <input id="produtos" type="text"></input>
+      </li>
+      <li>
+        <label for ="impostoIRPF"> Porcentagem do Imposto IRPF (%): </label> 
+          <input id="impostoIRPF" type="number"></input>
+      </li>
+      <li>
+        <label for ="impostoPIS"> Porcentagem do Imposto PIS (%): </label> 
+          <input id="impostoPIS" type="number"></input>
+      </li>
+      <li>
+        <label for ="impostoCOFINS"> Porcentagem do Imposto COFINS (%): </label> 
+          <input id="impostoCOFINS" type="number"></input>
+      </li>
+      <li>
+        <label for ="impostoINSS"> Porcentagem do Imposto INSS (%): </label> 
+          <input id="impostoINSS" type="number"></input>
+      </li>
+      <li>
+        <label for ="impostoISSQN"> Porcentagem do Imposto ISSQN (%): </label> 
+          <input id="impostoISSQN" type="number"></input>
+      </li>
+    </ul>
+    <button type="button" onclick="gerarNota()">Gerar nota fiscal</button>
+  </form>
+
+  <div id="notaFiscal"></div>
+
+</body>
+</html>
